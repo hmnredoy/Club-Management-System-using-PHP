@@ -1,0 +1,336 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+	/*background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(background.png);
+	*/height: 100vh;
+	/*background-size: cover;*/
+	background-position: center;
+	color: #333;
+	font-size: 15px;
+	background-image:  url('../img/dimension.png');
+
+
+}
+
+
+
+
+/*---------Menu/Main Navigation-------*/
+
+
+.headbar{
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	background-color: #333333;
+	margin-top: 0;
+	padding-bottom: 10px;
+	}
+
+
+
+.main-nav{
+
+padding:30px 0;
+float: right;
+list-style-type:none;
+
+height:30px;
+}
+
+
+
+
+
+.main-nav li { float:left; }
+.main-nav li a {
+	padding:9px 20px;
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	font:15px Tw Cen MT,ROBOTO,helvetica;
+
+}
+
+/* Submenu */
+.main-nav ul {
+	position:absolute;
+	left:-9999px;
+	top:-9999px;
+	list-style-type:none;
+	z-index: 1;
+margin-top: 10px;
+
+}
+.main-nav li:hover {
+	position:relative;
+	background: rgba(128, 0, 128,0.9);
+	padding-top: 3px;
+	padding-bottom: 3px;
+	transition: all 300ms linear;
+}
+.main-nav li:hover ul {
+	left:0px;
+	top:30px;
+	background: rgba(13, 13, 13,0.7);
+	padding:0px;
+	border: 3px groove #333;
+}
+
+.main-nav li:hover ul li a {
+	padding:10px 5px;
+	display:block;
+	width:168px;
+	text-indent:15px;
+	background-color: rgba(13, 13, 13,0.3);
+
+
+}
+.main-nav li:hover ul li a:hover { background: rgba(128, 0, 128,0.6); }
+
+
+
+
+/*
+
+.main-nav li{
+	display: inline-block;
+	text-align: center;
+}
+
+.main-nav li a{
+	color: #e6e6e6;
+	text-decoration: none;
+	padding: 8px 14px;
+	font-family: Tw Cen MT,ROBOTO,helvetica;
+	font-size: 15px;
+	transition: 0.3s;
+
+}
+
+.main-nav li.active a{
+	border: 1px solid #e6e6e6;
+}
+
+.main-nav li .cmncls:hover{
+	
+	border: 1px solid #800060;
+ 	padding-bottom: 13px;
+ 	padding-top: 13px;
+ 	background-color: #800060;
+  
+}
+*/
+
+#logo img{
+	width: 180px;
+	height: auto;
+	float: left;
+	margin-top: 20px;
+
+}
+
+#logo{
+	transition: all 500ms linear;
+}
+
+
+#logo.active{
+
+	opacity: 0.2;
+
+}
+
+
+.row{
+	max-width: 1200px;
+	margin: auto;
+
+}
+
+/*------for Hamburger Bar------*/
+
+
+
+
+.main-nav li.logout a:hover{
+	padding-bottom: 13px;
+ 	padding-top: 13px;
+	border-color: #e60000;
+	background-color: #ff3333;
+	color: #fff;
+}
+
+.main-nav li.logout a{
+	margin-left: 50px;
+
+	}
+
+
+
+#home .link1, #profile .link2 {
+	
+	border: 1px solid #e6e6e6;
+ 	padding-bottom: 13px;
+ 	padding-top: 13px;
+ 
+  
+}
+
+
+
+
+
+/*------Sidebar-------*/
+
+#sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background : rgba(12, 12, 12, 0.9);
+	left:-200px;
+	transition: all 500ms linear;
+	margin-top: -1.5%;
+}
+
+#sidebar.active{
+	left:0px;
+}
+
+#sidebar ul li
+{
+
+	color:rgba(230,230,230,0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+#sidebar ul a
+{
+	font-family: Tw Cen MT, Lato;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 230px;
+	top:30px;
+}
+
+#sidebar .toggle-btn span {
+	display: block;
+	width:30px;
+	height: 5px;
+	background: #a6a6a6;
+	margin: 5px 0px;
+	
+}
+
+
+#sidebar li.active {
+	background-color: #800060;
+	color: #fff;
+}
+
+#sidebar ul li:hover{
+	background-color: #800060;
+	color: #fff;
+
+}
+
+
+
+#sidebar #profileImage__{
+	margin-top: 20px;
+}
+
+/*#sidebar #profileImage #image{
+*/#sidebar #profileImage__ .profile__{
+	position: relative;
+		width: 78%;
+		height: 80%;
+		border: 5px solid #800060;
+		left: 10%;
+}
+
+#sidebar #profileImage__ a{
+
+	font-family: Tw Cen MT, Lato;
+	color: white;
+	text-decoration: none;
+	
+}
+
+#sidebar #profileImage__ span{
+
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #D9D9DA;
+	margin: 5px 0px;
+}
+
+
+
+
+/*---------footer--------*/
+
+footer{
+	position: absolute;
+	right: 0;
+	bottom: -300%;
+	left: 0;
+	padding: 1rem;
+	text-align: center;
+	width: 100%;
+	background-color: #333333;
+	color: white;
+	padding: 30px 0;
+	transition: all 500ms linear;
+}
+
+#footer.active{
+
+	background-color: rgba(51, 51, 51,0.7);
+	
+}
+
+
+#footer ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+#footer ul li a{
+	font-weight: 1.6em;
+	font-family: Tw Cen MT,ROBOTO,helvetica;
+	font-size: 18px;
+	color: #e6e6e6;
+	text-decoration: none;
+	text-align: center;
+	padding: 0 10px;
+	
+}
+
+
+#footer ul li a:hover{
+	text-decoration: underline;
+	
+}
+
+
+/*-------Header-------*/
+
+
+
+
+
+
+

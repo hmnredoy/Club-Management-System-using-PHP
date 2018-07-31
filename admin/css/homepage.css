@@ -1,0 +1,295 @@
+html,body{
+	margin:0px;
+	padding:0px;
+	font-family: Tw Cen MT,ROBOTO, 'Raleway', sans-serif;
+	/*background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(background.png);
+	*/height: 100vh;
+	background-position: center;
+	color: #262626;
+	font-size: 17px;
+	background-image: url('../../img/dimension.png');
+
+
+}
+
+
+
+
+/*---------Menu/Main Navigation-------*/
+
+
+.headbar{
+	top: 0;
+	/*position: absolute;
+	*/width: 100%;
+	
+	background-image: linear-gradient(rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)), url(../../img/4.png);
+
+	text-align: center;
+	padding: 5px 0 25px 0;
+	margin-top: 0;
+	
+	}
+
+
+
+.main-nav{
+	
+	list-style: none;
+	margin-top: 40px;
+	color: #661aff;
+	margin-right: 10%;
+}
+
+.main-nav li{
+	display: inline-block;
+	text-align: center;
+}
+
+.main-nav li a{
+	color: #e6e6e6;
+	text-decoration: none;
+	padding: 8px 14px;
+	font-family: Tw Cen MT,ROBOTO,helvetica;
+	font-size: 15px;
+	transition: 0.3s;
+
+}
+
+.main-nav li.active a{
+	border: 1px solid #e6e6e6;
+}
+
+.main-nav li a:hover{
+	
+	border: 1px solid #800060;
+ 	padding-bottom: 13px;
+ 	padding-top: 13px;
+ 	background-color: #800060;
+  
+}
+
+
+.logo img{
+	width: 180px;
+	height: auto;
+	float: left;
+	margin-top: -20px;
+	margin-left: 60px;
+}
+
+
+/*------for Hamburger Bar------*/
+
+
+#menu{
+	
+	transition: all 500ms linear;
+}
+
+#menu.menu-container{
+
+	margin-left:15%;
+
+}
+
+
+.main-nav li.logout a:hover{
+
+	border-color: #e60000;
+	background-color: #ff3333;
+	color: #fff;
+}
+
+.main-nav li.logout a{
+	margin-left: 50px;
+
+	}
+
+
+
+#home .link1, #profile .link2 {
+	
+	border: 1px solid #e6e6e6;
+ 	padding-bottom: 13px;
+ 	padding-top: 13px;
+ 
+  
+}
+
+
+
+
+
+/*------Sidebar-------*/
+
+
+#sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background : rgba(26, 26, 26, 0.9);
+	left:-200px;
+	transition: all 500ms linear;
+	background-image:
+	linear-gradient(rgba(26, 26, 26,0.7),rgba(26, 26, 26,0.5)), url(../../img/4.png);
+	
+	border-radius: 5px;
+}
+
+
+#sidebar.active{
+	left:0px;
+}
+
+#sidebar ul li
+{
+	margin-left: -40px;
+	text-align: center;
+	color:rgba(230,230,230,0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid rgba(100,100,100,0.3);
+}
+
+#sidebar ul a
+{
+	font-family: Tw Cen MT, Lato;
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 230px;
+	top:30px;
+}
+
+#sidebar .toggle-btn span {
+	display: block;
+	width:30px;
+	height: 5px;
+	background: #a6a6a6;
+	margin: 5px 0px;
+	cursor : pointer;
+}
+
+
+
+#sidebar li.active {
+	background-color: #800060;
+	color: #fff;
+}
+
+#sidebar ul li:hover{
+	background-color: #800060;
+	color: #fff;
+
+}
+
+
+
+#sidebar #profileImage .profile{
+	position: relative;
+	margin-top: 20px;
+		width: 73.3%;
+		height: 80%;
+		border: 5px solid #800060;
+		left: 10%;
+}
+
+#sidebar #profileImage a{
+
+	font-family: Tw Cen MT, Lato;
+	color: white;
+	text-decoration: none;
+	
+}
+
+#sidebar #profileImage span{
+
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #D9D9DA;
+	margin: 5px 0px;
+}
+
+
+
+
+/*------Body Content------*/
+
+
+#content{
+
+	text-align: center;
+}
+
+
+
+
+
+
+
+/*---------footer--------*/
+
+footer{
+
+	margin-top: 10%;
+	
+	height: 70px;
+	width: 100%;
+	color: #fff;
+	
+	text-align: center;
+	bottom: 0;
+	background-color: rgb(13, 13, 13);
+    padding: 20px 0 0 0;
+
+}
+
+
+footer nav ul li{
+	display: inline-block;
+	list-style: none;
+}
+
+footer nav ul li a{
+	font-weight: 1.6em;
+	font-family: Tw Cen MT,ROBOTO,helvetica;
+	font-size: 18px;
+	color: #e6e6e6;
+	text-decoration: none;
+	text-align: center;
+	padding: 0 10px;
+	
+}
+
+
+footer nav ul li a:hover{
+	text-decoration: underline;
+	
+}
+
+.footer-bottom{
+
+	background-color: #666666;
+	height: 10px;
+	width: 100%;
+	
+	bottom: 0;
+
+
+}
+
+
+/*-------Header-------*/
+
+
+
+
+
+
+

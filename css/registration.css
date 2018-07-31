@@ -1,0 +1,134 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+body{
+  color: #000;
+  font-size: 14px;
+  font-family: Tw Cen MT,ROBOTO,helvetica;
+  background-color: #f2f2f2;
+  position: relative;
+
+}
+
+
+.body-content{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+
+h1{
+  font-size: 25px;
+  font-family: "Tw Cen MT";
+  font-style: bold;
+  font-weight: normal;
+  padding:2% 0;
+  display: block;
+
+}
+
+.module{
+  position: relative;
+  height: 62%;
+  width:27%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color : #EBEBEB;
+  opacity: 1;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-top: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+  -webkit-box-shadow: 0px 1px 20px 0px rgba(136,136,136,1);
+-moz-box-shadow: 0px 1px 20px 0px rgba(136,136,136,1);
+box-shadow: 0px 1px 20px 0px rgba(136,136,136,1);
+
+}
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="email"]
+{
+  height:30px;
+  width:100%;;
+  display: inline-block;
+  vertical-align: middle;
+  height: 34px;
+  padding: 0 10px;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.7);
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.btn {
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 20px;
+  height: 34px;
+  background-color: #516ec8;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  -webkit-transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #314b9b;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 10px;
+}
+
+.bday{
+  background-color: #fff;
+  opacity: 1;
+  border-style: solid;
+  border-radius: 3px;
+  padding: 2px 20px;
+  border-color: #fff;
+}
+
+.error {
+  color: #FF0000;
+}
+
+.sign-in{
+  padding-top: 10px;
+  color :#4d4d4d;
+}
+
+.combine{
+
+  width:95px;
+  margin-left: 10px;
+}
+
+
